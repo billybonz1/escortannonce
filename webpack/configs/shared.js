@@ -2,7 +2,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
 const paths = require('../utils/paths');
-
+var ImageminPlugin = require('imagemin-webpack-plugin').default;
+const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
+// const WebPWebpackPlugin = require("webp-webpack-plugin");
 module.exports = env => ({
   mode: env.mode,
   context: paths.SRC_DIR,
@@ -18,7 +20,7 @@ module.exports = env => ({
         use: ['babel-loader'],
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(gif|webp|png|jpe?g|svg)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -71,5 +73,14 @@ module.exports = env => ({
     new CleanWebpackPlugin(),
     new FriendlyErrorsWebpackPlugin(),
     new WebpackBar(),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
+    // new WebPWebpackPlugin({
+    //     match: /(jpe?g|png)$/,
+    //     webp: {
+    //         quality: 80,
+    //         inject: true, // inject the default runtime code
+    //         injectCode: '' // inject your code
+    //     }
+    // })
   ],
 });

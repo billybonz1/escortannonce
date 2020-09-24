@@ -4,42 +4,633 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
-
-    <!-- Don't forget to delete this style tag. -->
+    <title>Escort Annonce</title>
     <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
+        *,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figcaption,figure,h1,h2,h3,h4,li,ol[class],p,ul[class]{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}article>*+*{margin-top:1em}button,input,select,textarea{font:inherit}
     </style>
   </head>
-
   <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
 
-      <!-- HTML image reference example. -->
-      <img src="./images/intro.png" alt="" width="640" />
-    </article>
+    <div class="mobile-menu-cont">
+
+      <div class="header-btns">
+        <a href="#" class="header-btn header-btn-login">
+          <img src="images/user.webp" alt="" />
+          <span>Login</span>
+        </a>
+        <a href="#" class="header-btn">
+          Register
+        </a>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li class="menu-ul-in">
+          <a href="#">Escorts</a>
+          <ul>
+            <li>
+              <a href="#">Last registered</a>
+            </li>
+            <li>
+              <a href="#">Independent</a>
+            </li>
+            <li>
+              <a href="#">Agency girls</a>
+            </li>
+            <li>
+              <a href="#">Discount</a>
+            </li>
+            <li>
+              <a href="#">International</a>
+            </li>
+            <li>
+              <a href="#">Boys</a>
+            </li>
+            <li>
+              <a href="#">Trans</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-ul-in">
+          <a href="#">About</a>
+          <ul>
+            <li><a href="#">Menu Link</a></li>
+            <li><a href="#">Menu Link</a></li>
+            <li><a href="#">Menu Link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="header-lang">
+        <a href="#">
+          <img src="images/france.webp" alt="french">
+        </a>
+        <a href="#" class="selected">
+          <img src="images/united-states.webp" alt="english">
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-search">
+      <div class="header-menu-search">
+        <form action="#">
+          <input type="text" placeholder="Search here" />
+          <button>Ok</button>
+        </form>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-top">
+        <div class="inner">
+          <div class="header-cont">
+            
+
+            <div class="hamburger hamburger--spin">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+
+
+            <div class="header-lang">
+              <a href="#">
+                <img src="images/france.webp" alt="french">
+              </a>
+              <a href="#" class="selected">
+                <img src="images/united-states.webp" alt="english">
+              </a>
+            </div>
+  
+  
+            <a href="#" class="logo">
+              <img src="images/logo.webp" alt="logo">
+            </a>
+  
+  
+            <div class="header-btns">
+              <a href="#" class="header-btn header-btn-login">
+                <img src="images/user.webp" alt="" />
+                <span>Login</span>
+              </a>
+              <a href="#" class="header-btn">
+                Register
+              </a>
+            </div>
+  
+            <div class="mobile-search-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="inner">
+          <div class="header-menu-cont">
+            <ul class="header-menu-ul">
+              <li><a href="#">last registered</a></li>
+              <li><a href="#">independent</a></li>
+              <li><a href="#">Agency girls</a></li>
+              <li><a href="#">Discount</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">BOYS</a></li>
+              <li><a href="#">TRANS</a></li>
+            </ul>
+            <div class="header-menu-search">
+              <form action="#">
+                <input type="text" placeholder="Search here" />
+                <button>Ok</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="choose-city">
+        <div class="inner">
+            <h2>Choose your city</h2>
+            <div class="glide">
+              <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides choose-city-cont">
+                    <div class="glide__slide choose-city-col">
+                      <a href="#">
+                        <span>Paris</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Nice</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Lyon</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Canners</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Marseille</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Boulogne-Billancourt</span>
+                        <span>238</span>
+                      </a>
+                    </div>
+                    <div class="glide__slide choose-city-col">
+                      <a href="#">
+                        <span>Paris</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Nice</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Lyon</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Canners</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Marseille</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Boulogne-Billancourt</span>
+                        <span>238</span>
+                      </a>
+                    </div>
+                    <div class="glide__slide choose-city-col">
+                      <a href="#">
+                        <span>Paris</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Nice</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Lyon</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Canners</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Marseille</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Boulogne-Billancourt</span>
+                        <span>238</span>
+                      </a>
+                    </div>
+                    <div class="glide__slide choose-city-col">
+                      <a href="#">
+                        <span>Paris</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Nice</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Lyon</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Canners</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Marseille</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Boulogne-Billancourt</span>
+                        <span>238</span>
+                      </a>
+                    </div>
+                    <div class="glide__slide choose-city-col">
+                      <a href="#">
+                        <span>Paris</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Nice</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Lyon</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Canners</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Marseille</span>
+                        <span>238</span>
+                      </a>
+                      <a href="#">
+                        <span>Boulogne-Billancourt</span>
+                        <span>238</span>
+                      </a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+            </div>
+         </div>
+    </div>
+     
+
+    <div class="content">
+      <div class="inner">
+        <div class="content-flex">
+          <div class="content-col">
+              <div class="choose-filter">
+
+                  <div class="choose-filter-header">
+                    <h2>
+                        Choose a filter
+                    </h2>
+                    <div class="choose-filter-active">1active filter</div>
+                    <div class="choose-filter-clear">Clear filter</div>
+
+                    <div class="show-filter-btn">
+                        Show
+                    </div>
+
+                  </div>
+                  
+                  <div class="choose-filter-cont">
+                      <div class="choose-filter-item">
+                          <div class="choose-filter-iitem">
+                            <img src="images/vip.webp" alt="vip" />
+                            <span>VIP</span>
+                          </div>
+                      </div>
+                      <div class="choose-filter-item">
+                        <div class="choose-filter-iitem">
+                          <img src="images/diamond.webp" alt="diamond" />
+                          <span>DIAMOND</span>
+                        </div>
+                      </div>
+                      <div class="choose-filter-item">
+                        <div class="choose-filter-iitem">
+                          <span>100% Verified</span>
+                        </div>
+                      </div>
+
+                      <div class="choose-filter-item">
+                        <div class="choose-filter-iitem">
+                          <img src="images/video-camera.webp" alt="video-camera" />
+                          <span>With video</span>
+                        </div>
+                      </div>
+                     
+                      <div class="choose-filter-item">
+                        <div class="choose-filter-iitem choose-filter-online">
+                          <span>Online</span>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Age</option>
+                          <option>Age 18-20</option>
+                          <option>Age 21-24</option>
+                          <option>Age 25+</option>
+                        </select>
+                      </div>
+
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Athnicity</option>
+                        </select>
+                      </div>
+                       
+                      
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Nationality</option>
+                        </select>
+                      </div>
+                    
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Eye color</option>
+                        </select>
+                      </div>
+                      
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Hair color</option>
+                        </select>
+                      </div>
+                      
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Cup size</option>
+                        </select>
+                      </div>
+                      
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Height</option>
+                        </select>
+                      </div>
+                      
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Weight</option>
+                        </select>
+                      </div>
+                      <div class="choose-filter-item">
+                          <select class="choose-filter-iitem">
+                            <option value="">Available for</option>
+                          </select>
+                      </div>
+                      <div class="choose-filter-item">
+                        <select class="choose-filter-iitem">
+                          <option value="">Pubic Hair</option>
+                        </select>
+                      </div>
+                  </div>
+            
+              </div>
+        
+              <div class="girls">
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-gold">
+                    <span>GOLD</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-verified">Verified PROFILE</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-diamond">
+                    <span>DIAMOND</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-unverified">UNVerified PROFILE</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-silver">
+                    <span>SILVER</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-verified">Verified PROFILE</div>
+                    <div class="girl-status-new">New</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-gold">
+                    <span>GOLD</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-verified">Verified PROFILE</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-diamond">
+                    <span>DIAMOND</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-unverified">UNVerified PROFILE</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-silver">
+                    <span>SILVER</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-verified">Verified PROFILE</div>
+                    <div class="girl-status-new">New</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-diamond">
+                    <span>DIAMOND</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-unverified">UNVerified PROFILE</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+
+                <a href="#" class="girl">
+                  <div class="girl-status girl-status-silver">
+                    <span>SILVER</span>
+                  </div>
+                  <div class="girl-vip"></div>
+                  <img src="images\7457ac9e909f6587a27ad6124b7e8e59.webp" alt="girl" />
+                  <div class="girl-statuses">
+                    <div class="girl-status-verified">Verified PROFILE</div>
+                    <div class="girl-status-new">New</div>
+                  </div>
+                  <div class="girl-bottom">
+                    <h3>Sabrina (25)</h3>
+                    <p>Paris</p>
+                  </div>
+                </a>
+              </div>
+          </div>
+
+          <div class="content-col">
+            <div class="girls-sidebar">
+              <div class="girl-sidebar-item">
+                <a href="#" class="girl">
+                  <div class="girl-status2">GIRL OF THE MONTH</div>
+                  <img src="images\a4297c52c7e0927e1b02afa001434d42.webp" alt="girl" />
+                  <div class="girl-bottom girl-bottom2">
+                    <h3>Sabrina</h3>
+                    <p>Paris</p>
+                    <span>25</span>
+                  </div>
+                </a>
+                <a href="#" class="header-btn header-btn-login girl-sidebar-all">View all</a>
+              </div>
+              <div class="girl-sidebar-item">
+                <a href="#" class="girl">
+                  <div class="girl-status2">GIRL OF THE MONTH</div>
+                  <img src="images\a4297c52c7e0927e1b02afa001434d42.webp" alt="girl" />
+                  <div class="girl-bottom girl-bottom2">
+                    <h3>Sabrina</h3>
+                    <p>Paris</p>
+                    <span>25</span>
+                  </div>
+                </a>
+                <a href="#" class="header-btn header-btn-login girl-sidebar-all">View all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="inner">
+        <div class="footer-cont">
+          <a href="#" class="logo">
+            <img src="images/logo.webp" alt="logo">
+          </a>
+        
+          
+          <div class="footer-menu">
+            <h3>ESCORTS</h3>
+            <ul>
+              <li><a href="#">Last registered</a></li>
+              <li><a href="#">Independent</a></li>
+              <li><a href="#">Agency girls</a></li>
+              <li><a href="#">Discount</a></li>
+              <li><a href="#">International</a></li>
+              <li><a href="#">Boys</a></li>
+              <li><a href="#">Trans</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <h3>POPULAT CITIES</h3>
+            <ul>
+              <li><a href="#">Paris escort</a></li>
+              <li><a href="#">Lyon escort</a></li>
+              <li><a href="#">Cannes escort</a></li>
+              <li><a href="#">Paris escort</a></li>
+              <li><a href="#">Lyon escort</a></li>
+              <li><a href="#">Cannes escort</a></li>
+              <li><a href="#">Paris escort</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <h3>ABOUT US</h3>
+            <ul>
+              <li><a href="#">Terms and conditions</a></li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+    </footer>
+    
+
+
+    <div class="after-footer">
+      <div class="inner">
+        <p>
+          Copyright © escort-escort.com, 2009-2020. By using this site User (you) agrees to comply and be bound by our terms of use. All escorts on this site were 18 or older at the time of depiction. This website uses cookies to better the users experience while visiting the website. The main languages of this site are French and Enflish. If you want to advertise here but don't understand either of these languages please do not use the services of the site.
+        </p>
+        <p>
+          All the escorts listed on escort-escort.com charge for their time and companionship only, anything else that may occur is a matter of coincidence and choice between consenting adults. By using this site you accept that we (The Site) do not support or advertise business based sexual activities in any forms therefore you (The Advertiser) hereby declare that you offer your time and companionship only in your advertisement(s). You also accept that we do not support any forms of sexual activited based business partnerships therefore every advertiser on this site must be an independent individual. Say NO to human trafficking. 
+        </p>
+      </div>
+    </div>
+
+
+
   </body>
 </html>
