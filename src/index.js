@@ -1,6 +1,7 @@
 import '../node_modules/choices.js/public/assets/styles/choices.min.css';
 import "./font/stylesheet.css";
-import './styles.scss';
+import './index.scss';
+
 import Glide from '@glidejs/glide';
 
 new Glide('.glide', {

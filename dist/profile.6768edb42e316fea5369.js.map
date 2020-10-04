@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./profile.js"],"names":[],"mappings":"yIAAA,6B","file":"profile.6768edb42e316fea5369.js","sourcesContent":["import \"./font/stylesheet.css\";\r\nimport './profile.scss';"],"sourceRoot":""}

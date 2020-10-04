@@ -5,12 +5,14 @@ const paths = require('../utils/paths');
 var ImageminPlugin = require('imagemin-webpack-plugin').default;
 const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 // const WebPWebpackPlugin = require("webp-webpack-plugin");
+
 module.exports = env => ({
   mode: env.mode,
   context: paths.SRC_DIR,
-  entry: './index.js',
-  output: {
-    path: paths.BUILD_DIR,
+  entry: {
+    index: './index.js',
+    profile: './profile.js',
+    login: './login.js',
   },
   module: {
     rules: [
