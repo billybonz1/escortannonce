@@ -1,2 +1,22 @@
 @import "./scss/reset";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "./scss/common";
+
+body{
+	overflow-x: hidden;
+}
+.glide__slide{
+	a{
+		display: block;
+	}
+}
+
+.profile-slider{
+	.inner{
+		padding: 0 20px;
+		overflow-x: scroll;
+	}
+	.glide__track{
+		overflow-x: scroll;
+	}
+}

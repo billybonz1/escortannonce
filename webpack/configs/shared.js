@@ -22,7 +22,7 @@ module.exports = env => ({
         use: ['babel-loader'],
       },
       {
-        test: /\.(gif|webp|png|jpe?g|svg)$/i,
+        test: /\.(gif|ico|webp|png|jpe?g|svg)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -57,6 +57,18 @@ module.exports = env => ({
             options: {
               name: '[name].[ext]',
               outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/Favicon',
             },
           },
         ],

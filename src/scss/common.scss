@@ -509,3 +509,30 @@ $hamburger-types: (spin);
         display: block;
     }
 }
+
+.content-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+}
+
+
+.content-col{
+    padding: 0 25px;
+    &:first-child{
+        flex: 1;
+    }
+    @media(max-width: 1023px){
+        &:last-child{
+            display: none;
+        }
+    }  
+}
+
+
+.content{
+    padding-top: 40px;
+    @media(max-width: 1023px){
+        padding-top: 20px;
+    }
+}
