@@ -12,6 +12,8 @@ body{
 	padding-top: 10px;
 	background-color: #222222;
 	min-height: 30vw;
+	max-height: 30vw;
+	overflow: hidden;
 	.inner{
 		position: absolute;
 	    overflow: visible;
@@ -98,6 +100,7 @@ body{
 	}
 	@media (max-width: 1200px) {
 		min-height: 50vw;
+		max-height: 50vw;
 	}
 	@media (max-width: 625px) {
 		padding-top: 0px;
@@ -110,6 +113,7 @@ body{
 	}
 	@media (max-width: 600px) {
 		min-height: 74vw;
+		max-height: 74vw;
 		.glide__slide{
 			a{
 				opacity: 1;
@@ -118,6 +122,7 @@ body{
 	}
 	@media (max-width: 476px) {
 		min-height: 473px;
+		max-height: 473px;
 		.glide__slide{
 			a img{
 				margin: 0 auto;
