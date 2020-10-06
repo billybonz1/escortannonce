@@ -37,10 +37,10 @@ body{
 		transform: none;
 	}
 	.glide__arrow--left{
-		left: 0;
+		left: 15px;
 	}
 	.glide__arrow--right{
-		right: 0;
+		right: 15px;
 		transform: rotateY(180deg)
 	}
 	.glide__slide{
@@ -55,6 +55,7 @@ body{
 		}
 		img{
 			display: block;
+			width: 100%;
 		}
 	}
 
