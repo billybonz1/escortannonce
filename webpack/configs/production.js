@@ -16,7 +16,7 @@ module.exports = env => ({
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all',
+          // chunks: 'all',
         },
       },
     },
