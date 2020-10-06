@@ -113,6 +113,9 @@ img{
     img{
         margin-right: 16px;
     }
+    svg{
+        min-width: 20px;
+    }
     &:hover{
         color: #fff;
         background: rgba(201, 201, 201, 0.2);
@@ -125,6 +128,12 @@ img{
     color: #f7f8f9;
     justify-content: flex-start;
     transition: .2s all;
+    svg{
+        margin-right: 10px;
+        path{
+            fill: #fff;
+        }
+    }
     &:hover{
         background-color: #177ec6;
     }
@@ -534,5 +543,58 @@ $hamburger-types: (spin);
     padding-top: 40px;
     @media(max-width: 1023px){
         padding-top: 20px;
+    }
+}
+
+.breadcrumbs{
+    margin-top: 16px;
+    color: #b5b5b5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        li{
+            margin-right: 24px;
+            position: relative;
+            a{
+                color: #b5b5b5;
+                text-decoration: none;
+            }
+        }
+        li:last-child{
+            a{
+                color: #333333;
+            }
+        }
+        li:not(:last-child){
+            &:after{
+                content: "/";
+                position: absolute;
+                right: -14px;
+                top: 1px;
+            }
+        }
+    }
+}
+
+.up-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    svg{
+        width: 100%;
+        max-height: 21px;
+        path{
+            fill: #fff;
+        }
     }
 }
