@@ -32,6 +32,7 @@
         url('HelveticaNeueCyr-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +45,7 @@
         url('HelveticaNeueCyr-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 /* @font-face {
@@ -140,6 +142,7 @@
         url('HelveticaNeueCyr-Roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* @font-face {
