@@ -49,6 +49,7 @@ body{
 	.glide__slide{
 		transition: .3s all;
 		background-color: #222;
+		max-width: 20%;
 		a{
 			transition: .3s all;
 			display: block;
@@ -101,6 +102,10 @@ body{
 	@media (max-width: 1200px) {
 		min-height: 50vw;
 		max-height: 50vw;
+		.glide__slide{
+			max-width: 33.33333333%;
+		}
+		
 	}
 	@media (max-width: 625px) {
 		padding-top: 0px;
@@ -114,7 +119,9 @@ body{
 	@media (max-width: 600px) {
 		min-height: 74vw;
 		max-height: 74vw;
+		
 		.glide__slide{
+			max-width: 50%;
 			a{
 				opacity: 1;
 			}
@@ -124,6 +131,7 @@ body{
 		min-height: 473px;
 		max-height: 473px;
 		.glide__slide{
+			max-width: 100%;
 			a img{
 				margin: 0 auto;
 			}
