@@ -1,0 +1,1 @@
+exports.pages = ["index", "profile", "login", "add_profile"];

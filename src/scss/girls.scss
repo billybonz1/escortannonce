@@ -1,0 +1,170 @@
+
+.girls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -5px;
+    @media(max-width: 900px){
+        justify-content: flex-start;
+    }
+}
+
+.girl{
+    width: 25%;
+    padding: 0 5px;
+    margin-bottom: 15px;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    img{
+        width: 100%;
+    }
+    @media(max-width: 900px){
+        width: 33.33333333%;
+    }
+    @media(max-width: 625px){
+        width: 50%;
+    }
+}
+
+.girl-status{
+    position: absolute;
+    background: url(images/goldaction.svg);
+    width: 64px;
+    height: 63px;
+    span{
+        font-size: 0;
+        color: transparent;
+        position: absolute;
+        display: block;
+    }
+}
+
+.girl-status2{
+    height: 40px;
+    background-color: #001478;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.girl-status-gold{
+    span{
+        width: 28px;
+        height: 27px;
+        background-image: url(images/GOLD.webp);
+        top: 10px;
+        left: 11px;
+    }
+}
+
+
+.girl-status-diamond{
+    span{
+        width: 46px;
+        height: 46px;
+        background-image: url(images/DIAMOND1.webp);
+        top: 3px;
+        left: 1px;
+    }
+}
+
+.girl-status-silver{
+    span{
+        width: 33px;
+        height: 32px;
+        background-image: url(images/SILVER.webp);
+        top: 8px;
+        left: 7px;
+    }
+}
+
+.girl-vip{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(images/vip2.webp);
+    top: 7px;
+    right: 6px;
+}
+
+.girl-statuses{
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 19px;
+    div{
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 11px;
+        text-transform: uppercase;
+        padding: 5px 7px;
+    }
+    @media(max-width: 460px){
+        div{
+            margin-top: 4px;
+            font-size: 9px;
+        }
+    }
+}
+
+.girl-status-verified{
+    border-radius: 2px;
+    background-color: #00b64d;
+    color: #fff;
+}
+
+.girl-status-new{
+    border-radius: 2px;
+    background-color: #75b2dc;
+}
+
+.girl-status-unverified{
+    border-radius: 2px;
+    background-color: #666666;
+}
+
+.girl-bottom{
+    width: 100%;
+    height: 45px;
+    background: rgba(255,255,255,0.8);
+    margin-top: -45px;
+    padding: 0 14px;
+    padding-top: 8px;
+    position: relative;
+    z-index: 2;
+    h3{
+        color: #436893;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    p{
+        color: #406893;
+        font-size: 16px;
+        line-height: 15px;
+        font-weight: 400;
+    }
+    span{
+        color: #436893;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        position: absolute;
+        right: 15px;
+        bottom: 6px;
+    }
+}

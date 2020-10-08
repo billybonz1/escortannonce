@@ -1,0 +1,65 @@
+.profile-statuses{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 42.5px;
+	margin-bottom: 22.5px;
+	@media(max-width: 734px){
+		margin-top: 22.5px;
+	}
+}
+.profile-status{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-right: 10px;
+	margin-top: 7.5px;
+	margin-bottom: 7.5px;
+	svg{
+		min-width: 15px;
+		margin-right: 10px;
+	}
+	span{
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 22px;
+		text-transform: uppercase;
+	}
+}
+
+.profile-status-vip{
+	background-color: #4c5767;
+	padding: 4px 25px;
+	svg{
+		min-height: 14px;
+		path{
+			fill: #fbeba7;
+		}
+	}
+	span{
+		color: #fbeba7;
+	}
+}
+
+.profile-status-paused{
+	background-color: #edc921;
+	padding: 4px 15px;
+}
+
+.profile-status-verified{
+	background-color: #00b64d;
+	padding: 4px 15px;
+}
+
+.profile-status-diamond{
+	border: 1px solid #4c5767;
+	padding: 4px 20px;
+	svg{
+		polygon{
+			fill: #4c5767;
+		}
+	}
+	span{
+		color: #4c5767;
+	}
+}

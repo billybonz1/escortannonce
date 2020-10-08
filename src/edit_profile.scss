@@ -1,0 +1,35 @@
+@import "./scss/reset";
+@import "./scss/common";
+@import "./scss/profile_block";
+@import "./scss/add_profile_menu";
+@import "./scss/add_profile";
+
+
+
+.profile-photo{
+	background-image: url(images/a4297c52c7e0927e1b02afa001434d42.webp);
+	background-size: cover;
+	position: relative;
+}
+
+.profile-photo-btn{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background-color: rgba(0,0,0,0.5);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 55%;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.profile-photo-delete{
+	background-image: url(images/svg/delete.svg);
+}
+
+.profile-photo-refresh{
+	background-image: url(images/svg/refresh.svg);
+	right: 28px;
+}

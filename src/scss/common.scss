@@ -116,6 +116,9 @@ img{
     svg{
         min-width: 20px;
     }
+    span{
+        transition: .2s all;
+    }
     &:hover{
         color: #fff;
         background: rgba(201, 201, 201, 0.2);
@@ -138,6 +141,54 @@ img{
         background-color: #177ec6;
     }
 }
+
+.header-btn-danger{
+    background-color: #bb4c43;
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    &:hover{
+        background-color: darken(#bb4c43, 5);
+        color: #fff;
+    }
+}
+
+.header-btn-green{
+    background-color: #64c07c;
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    &:hover{
+        background-color: darken(#64c07c, 5);
+        color: #fff;
+    }
+}
+
+.cancel-btn{
+    border: 1px solid #bb4c43;
+    span{
+        color: #bb4c43;
+        font-weight: 700;
+    }
+    &:hover{
+        background-color: #bb4c43;
+        span{
+            color: #fff;
+        }
+    }
+}
+
+
+.header-btn-edit{
+    background-color: #b5b5b5;
+    color: #fff;
+    font-weight: 700;
+    &:hover{
+        background-color: darken(#b5b5b5, 5);
+        color: #fff;
+    }
+}
+
 .header-lang{
     display: flex;
     flex-wrap: wrap;
@@ -169,6 +220,10 @@ img{
             text-decoration: none;
             padding: 4px 20px;
             display: block;
+            transition: .2s all;
+            &:hover{
+                color: #2f8aca;
+            }
         }
         &:first-child{
             a{
@@ -302,7 +357,7 @@ footer{
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
-        font-family: sans-serif;
+        // font-family: sans-serif;
         &:first-child{
             margin-top: 0;
         }

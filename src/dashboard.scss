@@ -1,0 +1,112 @@
+@import "./scss/reset";
+@import "./scss/common";
+@import "./scss/add_profile_menu";
+
+
+.welcome-block,.welcome-block-in{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.welcome-block-in{
+	flex: 1;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f7f8f9;
+	padding: 10px 20px;
+	p{
+		color: #333333;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		margin-bottom: 5px;
+	}
+	div{
+		a{
+			color: #406893;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+			text-decoration: none;
+		}
+	}
+	.cancel-btn{
+		background-color: #bb4c43;
+		max-width: 40px;
+		min-width: 40px;
+		min-height: 40px;
+		svg{
+			path{
+				fill: #fff;
+			}
+		}
+	}
+	@media(max-width: 350px){
+		p{
+			font-size: 12px;
+		}
+		div a{
+			font-size: 12px;
+		}
+	}
+}
+
+.dashboard-items{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	margin-top: 50px;
+}
+
+.dashboard-col{
+	padding: 0 10px;
+	width: 33.33333333%;
+	@media(max-width: 540px){
+		width: 100%;
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.dashboard-item{
+	border: 1px solid #b5b5b5;
+	background-color: #ffffff;
+	padding: 15px 0;
+	padding-left: 55px;
+	background-image: url(images/svg/users.svg);
+	background-repeat: no-repeat;
+	background-position: 13px center;
+	background-size: 25px;
+	&>strong{
+		color: #64c07c;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 22px;
+	}
+	div{
+		color: #b5b5b5;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		strong{
+			color: #303030;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 22px;
+		}
+	}
+}
+
+.dashboard-item-inactive{
+	&>strong{
+		color: #bb4c43;
+	}
+}
+
+.dashboard-item-stopped{
+	&>strong{
+		color: #edc921;
+	}
+}

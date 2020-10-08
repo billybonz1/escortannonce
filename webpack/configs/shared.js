@@ -13,6 +13,12 @@ module.exports = env => ({
     index: './index.js',
     profile: './profile.js',
     login: './login.js',
+    add_profile: './add_profile.js',
+    edit_profile: './edit_profile.js',
+    manage_profile: './manage_profile.js',
+    settings: './settings.js',
+    support: './support.js',
+    dashboard: './dashboard.js',
   },
   module: {
     rules: [

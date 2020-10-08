@@ -1,6 +1,8 @@
 @import "./scss/reset";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "./scss/common";
+@import "./scss/profile_block";
+@import "./scss/profile_statuses";
 
 body{
 	overflow-x: hidden;
@@ -331,135 +333,8 @@ body{
 	}
 }
 
-.profile-statuses{
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 49px;
-	margin-bottom: 30px;
-	@media(max-width: 734px){
-		margin-top: 30px;
-	}
-}
-.profile-status{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin-right: 10px;
-	svg{
-		min-width: 15px;
-		margin-right: 10px;
-	}
-	span{
-		color: #ffffff;
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 22px;
-		text-transform: uppercase;
-	}
-}
 
-.profile-status-vip{
-	background-color: #4c5767;
-	padding: 4px 25px;
-	svg{
-		path{
-			fill: #fbeba7;
-		}
-	}
-	span{
-		color: #fbeba7;
-	}
-}
 
-.profile-status-verified{
-	background-color: #00b64d;
-	padding: 4px 15px;
-}
-
-.profile-status-diamond{
-	border: 1px solid #4c5767;
-	padding: 4px 20px;
-	svg{
-		polygon{
-			fill: #4c5767;
-		}
-	}
-	span{
-		color: #4c5767;
-	}
-}
-
-.profile-block{
-	border-radius: 4px;
-	border: 1px solid #b5b5b5;
-	background-color: #ffffff;
-	padding: 30px 18px;
-	margin-bottom: 30px;
-	h2{
-		margin-top: 0;
-		text-transform: uppercase;
-		line-height: 19px;
-		max-height: 19px;
-		margin-bottom: 30px;
-	}
-	p{
-		color: #333333;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 24px;
-		margin-bottom: 20px;
-		&:last-child{
-			margin-bottom: 0;
-		}
-	}
-	table{
-		width: 100%;
-		border-spacing: unset;
-		strong{
-			min-width: 45px;
-		}
-		thead{
-			tr{
-				color: #303030;
-				font-size: 16px;
-				line-height: 24px;
-				text-transform: uppercase;
-			}
-			td{
-				&:first-child{
-					font-weight: 700;
-				}
-				border-bottom: 1px solid #b5b5b5;
-			}
-		}
-		tbody{
-			td{
-				padding-top: 24px;
-				color: #406893;
-				font-size: 16px;
-				line-height: 24px;
-				&:first-child{
-					color: #303030;
-					font-weight: 400;
-				}
-			}
-		}
-	}
-}
-
-.profile-block-row{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -10px;
-}
-
-.profile-block-col{
-	padding: 0 10px;
-	width: 50%;
-	@media(max-width: 900px){
-		width: 100%;
-	}
-}
 
 .pb-props{
 	border-bottom: 1px solid #b5b5b5;
