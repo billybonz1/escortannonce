@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./settings.js"],"names":[],"mappings":"yIAAA,6B","file":"settings.98a0e9281b920f5db21a.js","sourcesContent":["import \"./font/stylesheet.css\";\r\nimport './settings.scss';"],"sourceRoot":""}

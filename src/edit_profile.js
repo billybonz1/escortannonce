@@ -1,4 +1,6 @@
 import '../node_modules/choices.js/public/assets/styles/choices.min.css';
+import '../node_modules/suneditor/src/assets/css/suneditor.css';
+import '../node_modules/suneditor/src/assets/css/suneditor-contents.css';
 import "./font/stylesheet.css";
 import './edit_profile.scss';
 
@@ -15,7 +17,7 @@ import { all } from './js/common.js';
 all(document);
 
 
-import '../node_modules/suneditor/dist/css/suneditor.min.css';
+
 import suneditor from 'suneditor';
 
 import {align, horizontalRule} from 'suneditor/src/plugins';

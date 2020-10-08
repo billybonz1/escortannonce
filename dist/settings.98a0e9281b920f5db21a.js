@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{AgIA:function(n,o,u){},fXVC:function(n,o,u){},xBuE:function(n,o,u){"use strict";u.r(o);u("fXVC"),u("AgIA")}},[["xBuE",0]]]);
-//# sourceMappingURL=settings.98a0e9281b920f5db21a.js.map

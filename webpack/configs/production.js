@@ -12,16 +12,16 @@ module.exports = env => ({
   },
   optimization: {
     moduleIds: 'hashed',
-    runtimeChunk: 'single',
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          // chunks: 'all',
-        },
-      },
-    },
+    // runtimeChunk: 'single',
+    // splitChunks: {
+    //   cacheGroups: {
+    //     vendor: {
+    //       test: /[\\/]node_modules[\\/]/,
+    //       name: 'vendors',
+    //       // chunks: 'all',
+    //     },
+    //   },
+    // },
   },
   module: {
     rules: [
@@ -48,9 +48,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -61,9 +58,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -74,9 +68,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -87,9 +78,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -100,9 +88,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -113,9 +98,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -126,9 +108,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -139,9 +118,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
@@ -152,9 +128,6 @@ module.exports = env => ({
       minify: {
         collapseWhitespace: true,
         removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),
